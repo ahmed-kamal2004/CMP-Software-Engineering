@@ -36,7 +36,6 @@ exports.createEmployee = async (req, res, next) => {
   const data = req.body
   flag = true
   for (const i of employee) {
-    console.log(i.id === data.id)
     if (i.id == data.id) {
       flag = false;
     }
